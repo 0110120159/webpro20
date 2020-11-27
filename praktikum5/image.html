@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMAGE PICKER</title>
+</head>
+
+<body style="margin: 250px">
+
+    <center>
+        <select onchange="gantigambar();" id="listgambar">
+			<option value="https://ecs7.tokopedia.net/img/cache/700/product-1/2020/6/24/105119325/105119325_7fed0c4f-81a6-4e25-849e-0248f6581622_505_505.jpg">PILIH NAMA-NAMA BUAH-BUHAN</option>
+            <option value=image/pepaya.jpg>Pepaya</option>
+            <option value=image/melon.jpg>Melon</option>
+            <option value=image/semangka.jpg>Semangka</option>
+            <option value=image/timun.jpg>Timun</option>
+            <option value=image/semangkakuning.gif>Semangkakuning</option>
+            
+        
+        </select>
+    </center>
+    <br/>
+    <img src="https://ecs7.tokopedia.net/img/cache/700/product-1/2020/6/24/105119325/105119325_7fed0c4f-81a6-4e25-849e-0248f6581622_505_505.jpg" style="width: 90%" id="gambar">
+
+</body>
+<script type="text/javascript">
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+        alert("Ini Gambar " + gambar);
+    }
+</script>
+
+</html>
